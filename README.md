@@ -13,13 +13,11 @@ https://github.com/florinbaciuu/lilygo-tqtpros3-esp-idf-project.git
 ```
 git clone https://github.com/florinbaciuu/lilygo-tqtpros3-esp-idf-project.git
 ```
-
-## Verificare submodule:
+### Verificare submodule:
 ```
 git submodule status
 ```
-
-## Inițializare + update submodule:
+### Inițializare + update submodule:
 ```
 git submodule update --init --recursive
 ```
