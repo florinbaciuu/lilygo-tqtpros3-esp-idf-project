@@ -40,17 +40,12 @@ git rm nume_fisier                      # Remove files from the working tree and
 Atentie doar unul poate fii setat concomitent
 ```
 git push --set-upstream origin main                             # Seteaza upstream github predefinit
-
-# sau
-
-git push --set-upstream gitlab main                             # Seteaza upstream gitlab
 ```
 ---
 
 ## Creează primul commit: si lucreaza cu commit
 ```
 git commit -m "first commit"
-
 git commit -m "first commit" --status
 git commit --status
 git commit --branch
@@ -103,26 +98,14 @@ git commit -m "Șters submodulul ESP32_Resource_Monitor"
 ## 🚀 Push către GitHub
 ```
 git push -u origin main                                           # Push initial La primul push dintr-un proiect nou:
-git push -u github main
-git push -u gitlab main
-
 git push --set-upstream origin main                               # Push initial La primul push dintr-un proiect nou:
-git push --set-upstream github main
-git push --set-upstream gitlab main
-
 git branch -vv							                          # Verifica ce upstream e
 git push 							                              # Dupa ce ai pus "git push -u origin main"
-
 git push --force origin main                                      # Push cu forțare (atenție!)
-git push --force github main
-git push --force gitlab main
-
 git push origin main
 git push github main
 git push gitlab main
-
 git push --all                                                    # Dar fii atent --all inseamna toate branch-urile nu toti remote-ii
-
 git fetch                                                         # Doar aduce modificările remote, nu le aplică local
 git pull                                                          # Fetch + Merge (sau Rebase) = trage și le bagă direct în branchul tău
 git clone                                                         # Fetch complet + creează repo nou local
@@ -181,13 +164,11 @@ git branch                                              # View local
 git branch -r                                           # View remote
 git branch -a                                           # View all (local and remote)
 git branch -v                                           # View the branches
-
 git branch -d nume_branch                               # Delete the branch work only if the branch fusiioned with main
 git branch -D nume_branch                               # Delete the branch forced
-
 git push origin --delete nume_branch                    # Sterge un branch de pe remote
-git push github --delete nume_branch 
-git push gitlab --delete nume_branch 
+git push github --delete nume_branch
+git push gitlab --delete nume_branch
 
 ```
 
